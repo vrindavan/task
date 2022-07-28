@@ -6,12 +6,12 @@ const Navbar = () => {
 	return (
 		<header className='header'>
 			<div className='navbar-container'>
-				<div className='left'>
+				<div className='left-navbar'>
 					<h1 className='navbar-logo'>
 						ATools<span className='colored-navbar-title'>.</span>
 					</h1>
 				</div>
-				<div className='right'>
+				<div className='right-navbar'>
 					<ul className='navbar-btns'>
 						<li className='navbar-btn btn1'>
 							<a href='#' className='btn'>
