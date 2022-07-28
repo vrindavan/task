@@ -77,10 +77,6 @@
                gap: 3rem;
                align-items: center;
 
-               .links {
-                  cursor: pointer;
-               }
-
                .more-link1 {
                   // margin-left: 30px;
                   display: flex;
@@ -94,6 +90,10 @@
                      accent-color: #083444;
                      cursor: pointer;
                   }
+               }
+
+               .more-link2 {
+                  cursor: pointer;
                }
             }
          }
