@@ -1,89 +1,100 @@
 .hero-container {
-   display: flex;
-   justify-content: space-between;
-   // align-items: center;
    height: 100vh;
 
-   .right-hero {
-      background-color: #083444;
-      flex: 3.5;
-   }
-
-   .left-hero {
-      // background-color: aqua;
-      flex: 2;
+   .hero-wrapper {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px 50px;
+      height: 100%;
 
-      .form-wrapper {
+      .right-hero {
+         background-color: #083444;
+         flex: 3;
+      }
+
+      .left-hero {
+         // background-color: aqua;
+         flex: 2;
          display: flex;
          flex-direction: column;
          align-items: center;
-         gap: 10px;
+         justify-content: center;
+         // padding: 20px 50px;
+         height: calc(100vh - 56px);
 
-         .form-title {
-            color: #000;
-            font-weight: 800;
-         }
-
-         .sub-title {
-            font-size: 15px;
-            font-weight: 400;
-         }
-
-         .form-input {
-            border-radius: 3px;
-            padding: 13px 20px;
-            background-color: transparent;
-            width: 100%;
-            border: rgba(128, 128, 128, 0.244) 1px solid;
-         }
-
-         input::placeholder {
-            color: rgba(128, 128, 128, 0.659);
-            font-weight: 500;
-         }
-
-         .form-submit-btn {
-            border-radius: 3px;
-            border: none;
-            padding: 10px 20px;
-            width: 100%;
-            background-color: #083444;
-            color: #fff;
-            font-weight: 600;
-            cursor: pointer;
-
-         }
-      }
-
-      .more {
-         display: flex;
-         margin-top: 5px;
-         font-size: 11px;
-         color: #083444;
-         font-weight: 600;
-
-         .links {
-            cursor: pointer;
-         }
-
-         .more-link1 {
-            // margin-left: 30px;
+         .form-wrapper {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            gap: 3px;
+            gap: 10px;
 
-            .more-link-checkbox {
-               width: 1.15em;
-               height: 1.15em;
-               transform: translateY(-0.075em);
-               accent-color: #083444;
+            .form-title {
+               color: #000;
+               font-weight: 800;
+            }
+
+            .sub-title {
+               margin-top: -13px;
+               margin-bottom: 13px;
+               font-size: 12px;
+               font-weight: 500;
+            }
+
+            .form-input {
+               border-radius: 3px;
+               padding: 13px 20px;
+               background-color: transparent;
+               width: 100%;
+               border: rgba(128, 128, 128, 0.244) 1px solid;
+            }
+
+            input::placeholder {
+               color: rgba(128, 128, 128, 0.659);
+               font-weight: 500;
+            }
+
+            .form-submit-btn {
+               border-radius: 3px;
+               border: none;
+               padding: 10px 20px;
+               width: 118%;
+               background-color: #083444;
+               color: #fff;
+               font-weight: 600;
                cursor: pointer;
+
+            }
+         }
+
+         .more {
+            margin-top: 5px;
+            font-size: 11px;
+            color: #083444;
+            font-weight: 600;
+            align-items: center;
+
+            .more-links {
+               width: 100%;
+               display: flex;
+               gap: 3rem;
+               align-items: center;
+
+               .links {
+                  cursor: pointer;
+               }
+
+               .more-link1 {
+                  // margin-left: 30px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 3px;
+
+                  .more-link-checkbox {
+                     width: 15px;
+                     height: 11px;
+                     accent-color: #083444;
+                     cursor: pointer;
+                  }
+               }
             }
          }
       }
